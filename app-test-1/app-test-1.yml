@@ -12,11 +12,11 @@ metadata:
     replicas: 2
     selector:
       matchLabels:
-        app: app-test
+        app: app-test-2
     template:
       metadata:
         labels:
-          app: app-test
+          app: app-test-2
       spec:
         containers:
         - name: app-test-c1
