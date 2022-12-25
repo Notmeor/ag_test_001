@@ -3,3 +3,25 @@ kind: Namespace
 metadata:
   name: app-test-2
 ---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-test-2-deploy
+  namespace: app-test-2
+  spec:
+    replicas: 2
+    selector:
+      matchLabels:
+        app: app-test
+    template:
+      metadata:
+        labels:
+          app: app-test
+      spec:
+        containers:
+        - name: app-test-c1
+          image: nginx
+          ports:
+          - name: web
+            containerPort: 80
+
