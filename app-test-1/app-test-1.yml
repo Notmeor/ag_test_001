@@ -44,7 +44,7 @@ spec:
   - name: http
     port: 8081
     targetPort: 8082
-    protocol: tcp
+    protocol: TCP
   selector:
     app: app-test-2
 ---
