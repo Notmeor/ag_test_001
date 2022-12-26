@@ -23,7 +23,7 @@ spec:
         image: nginx
         ports:
         - name: web
-          containerPort: 8082
+          containerPort: 80
         securityContext:
           readOnlyRootFilesystem: false
         resources:
@@ -43,7 +43,7 @@ spec:
   ports:
   - name: http
     port: 8081
-    targetPort: 8082
+    targetPort: 80
     protocol: TCP
   selector:
     app: app-test-2
