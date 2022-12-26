@@ -25,7 +25,7 @@ spec:
         - name: web
           containerPort: 80
         securityContext:
-          readOnlyRootFilesystem: false
+          readOnlyRootFilesystem: true
         resources:
           requests:
             cpu: 500m
