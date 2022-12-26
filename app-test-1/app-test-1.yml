@@ -22,7 +22,7 @@ spec:
       - name: app-test-c1
         image: nginx
         ports:
-        - name: webå
+        - name: web
           containerPort: 80
         securityContext:
           readOnlyRootFilesystem: false
