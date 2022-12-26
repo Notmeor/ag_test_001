@@ -9,7 +9,7 @@ metadata:
   name: app-test-2-deploy
   namespace: app-test-2
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: app-test-2
