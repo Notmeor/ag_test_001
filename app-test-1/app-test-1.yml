@@ -24,4 +24,10 @@ spec:
         ports:
         - name: web
           containerPort: 80
+        securityContext:
+          readOnlyRootFilesystem: true
+        resources:
+          requests:
+            cpu: 500m
+            memory: 500Mi
 
