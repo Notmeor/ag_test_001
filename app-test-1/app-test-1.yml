@@ -62,7 +62,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: app
+            name: app-test-2
             port:
-              number: 8081
+              number: 80
 
