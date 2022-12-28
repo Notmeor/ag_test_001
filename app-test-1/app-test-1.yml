@@ -48,5 +48,21 @@ spec:
   selector:
     app: app-test-2
 ---
-
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: app-test-2-ingress
+  namespace: app-test-2
+spec:
+  rules:
+  - host: "notmeor.xyz"
+    http:
+    paths:
+    - path: /
+      pathType: Prefix
+      backend:
+        service:
+          name: app-test-2-svc
+          port:
+            number: 80
 
