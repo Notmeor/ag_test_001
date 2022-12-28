@@ -55,7 +55,6 @@ metadata:
   namespace: app-test-2
 spec:
   rules:
-  # - host: "notmeor.xyz"
   - http:
     paths:
     - path: /
@@ -65,4 +64,5 @@ spec:
           name: app-test-2-svc
           port:
             number: 80
+---
 
