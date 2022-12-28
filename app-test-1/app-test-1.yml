@@ -57,12 +57,12 @@ spec:
   rules:
   - host: "notmeor.xyz"
     http:
-    paths:
-    - path: /
-      pathType: Prefix
-      backend:
-        service:
-          name: app-test-2-svc
-          port:
-            number: 80
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: app-test-2-svc
+            port:
+              number: 80
 
