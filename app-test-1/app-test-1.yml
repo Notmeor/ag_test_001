@@ -64,5 +64,5 @@ spec:
           service:
             name: app-test-2-svc
             port:
-              number: 80
+              number: 81
 
