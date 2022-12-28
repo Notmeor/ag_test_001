@@ -42,8 +42,8 @@ spec:
   type: ClusterIP
   ports:
   - name: http
-    port: 8080
-    targetPort: 801
+    port: 80
+    targetPort: 80
     protocol: TCP
   selector:
     app: app-test-2
@@ -64,5 +64,5 @@ spec:
           service:
             name: app-test-2-svc
             port:
-              number: 81
+              number: 80
 
