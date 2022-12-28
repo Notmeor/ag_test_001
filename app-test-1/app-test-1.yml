@@ -62,7 +62,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: app-test-2-svc
+            name: app
             port:
               number: 80
 
