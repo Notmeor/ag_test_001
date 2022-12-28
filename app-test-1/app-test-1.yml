@@ -55,8 +55,8 @@ metadata:
   namespace: app-test-2
 spec:
   rules:
-  # - host: "notmeor.xyz"
-  -  http:
+  - host: "notmeor.xyz"
+    http:
       paths:
       - path: /
         pathType: Prefix
